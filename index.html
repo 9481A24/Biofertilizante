@@ -1,128 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Receita – 1 litro de Biofertilizante (teste comercial)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fornecedores e Receitas de Biofertilizantes</title>
   <style>
-    :root{
-      --bg:#0b0b0b;
-      --card:#121212;
-      --accent:#ffd54f;
-      --text:#e9e9e9;
-      --muted:#bdbdbd;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 0;
+      margin: 0;
+      color: #333;
+      scroll-behavior: smooth;
     }
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
+    header {
+      background-color: #2e7d32;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .container{
-      max-width:900px;
-      margin:28px auto;
-      padding:20px;
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    header{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      margin-bottom:18px;
+    header nav a:hover {
+      text-decoration: underline;
     }
-    .badge{
-      width:12px;height:12px;border-radius:3px;background:var(--accent);
-      box-shadow:0 0 6px rgba(255,213,79,0.12);
+    h1, h2 {
+      color: #2e7d32;
+      margin-top: 40px;
     }
-    h1{
-      font-size:20px;
-      margin:0;
+    .category, .recipe {
+      margin: 30px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border:1px solid rgba(255,255,255,0.03);
-      padding:18px;
-      border-radius:10px;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
-    h2{ font-size:16px; margin:10px 0; color:var(--accent) }
-    ul{ margin:10px 0 18px 20px; color:var(--text) }
-    li{ margin:8px 0 }
-    .muted{ color:var(--muted); font-size:13px }
-    .note{ margin-top:12px; padding:10px; border-radius:8px; background:rgba(255,255,255,0.02); color:var(--muted) }
-    .actions{ margin-top:16px; display:flex; gap:8px; flex-wrap:wrap }
-    .btn{
-      background:var(--accent);
-      color:#111;
-      padding:8px 12px;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:600;
-      font-size:14px;
+    li {
+      margin-bottom: 10px;
     }
-    @media (max-width:520px){
-      .container{ padding:14px }
-      h1{ font-size:18px }
+    a {
+      color: #1565c0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .recipe li {
+      margin-bottom: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <span class="badge" aria-hidden="true"></span>
-      <h1>Receita – 1 litro de Biofertilizante (teste comercial)</h1>
-    </header>
 
-    <main class="card" role="main">
-      <section aria-labelledby="ingredientes">
-        <h2 id="ingredientes">Ingredientes</h2>
-        <ul>
-          <li>500 g de esterco bovino curtido <strong>ou</strong> 300 g de restos vegetais triturados</li>
-          <li>30 g de melaço de cana (ou açúcar mascavo)</li>
-          <li>1 L de água filtrada/fervida e resfriada</li>
-          <li>1 sachê (5 g) de fermento biológico seco <strong>ou</strong> 1 g de levedura pura <em>Saccharomyces cerevisiae</em></li>
-          <li>1 g de inoculante de <em>Bacillus subtilis</em> (comprado em agropecuária ou fornecedor agrícola)</li>
-        </ul>
-      </section>
+<header>
+  <nav>
+    <a href="#algas">Algas Marinhas</a>
+    <a href="#borra">Borra de Café</a>
+    <a href="#compostos">Compostos Fermentados</a>
+    <a href="#hormonios">Hormônios Vegetais</a>
+    <a href="#melado">Melado de Cana</a>
+    <a href="#receitas">Receitas</a>
+  </nav>
+</header>
 
-      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
+<main>
+  <h1>Fornecedores e Receitas de Biofertilizantes</h1>
 
-      <section aria-labelledby="materiais">
-        <h2 id="materiais">Materiais</h2>
-        <ul>
-          <li>Garrafa de vidro âmbar (1 litro)</li>
-          <li>Funil e coador fino (pano de algodão ou filtro de café)</li>
-          <li>Balança de precisão (gramas)</li>
-          <li>Colher de inox ou espátula para mexer</li>
-          <li>Luvas descartáveis e etiqueta para identificação</li>
-        </ul>
-      </section>
-
-      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
-
-      <section aria-labelledby="preparo">
-        <h2 id="preparo">Preparo (resumo)</h2>
-        <ol style="margin-left:20px;color:var(--text)">
-          <li>Em um recipiente limpo, misture o esterco (ou restos vegetais) com o melaço.</li>
-          <li>Adicione a água filtrada já resfriada até completar 1 litro.</li>
-          <li>Mexa bem e deixe repousar 1–2 horas.</li>
-          <li>Adicione o fermento/levedura e o inoculante de <em>Bacillus subtilis</em>, mexa levemente.</li>
-          <li>Coe a mistura utilizando funil e pano; transfira para a garrafa âmbar.</li>
-          <li>Feche bem, identifique com etiqueta (data e lote) e armazene em local fresco e escuro.</li>
-        </ol>
-        <p class="muted">Observação: este é um procedimento de teste comercial. Faça sempre testes de estabilidade e contagem microbiana antes de comercializar.</p>
-      </section>
-
-      <div class="note">
-        <strong>Validade e armazenamento:</strong> conservar em local fresco e escuro; recomenda-se testar estabilidade (pH, odor, presença de contaminantes) e embalar em frascos esterilizados. Para validade estendida, considerar técnicas de pasteurização leve ou estabilizantes aprovados para uso agrícola.
-      </div>
-
-      <div class="actions" aria-hidden="true">
-        <a class="btn" href="#ingredientes">Ir para Ingredientes</a>
-        <a class="btn" href="#preparo">Ir para Preparo</a>
-      </div>
-    </main>
+  <div class="category" id="algas">
+    <h2>🌿 Algas Marinhas</h2>
+    <ul>
+      <li><a href="https://ciadasalgas.com.br/?utm_source=chatgpt.com" target="_blank">Cia das Algas</a> – Empresa 100% brasileira especializada em macroalgas.</li>
+      <li><a href="https://carboadvance.com/algas-brasil/?utm_source=chatgpt.com" target="_blank">Algas Brasil</a> – Extratos de Kappaphycus alvarezii, ricos em nutrientes e polissacarídeos.</li>
+      <li><a href="https://blog.araraseed.com.br/seacarbon-startup-bioinsumos/?utm_source=chatgpt.com" target="_blank">SeaCarbon</a> – Startup em SC que cultiva algas para bioinsumos agrícolas.</li>
+    </ul>
   </div>
+
+  <div class="category" id="borra">
+    <h2>☕ Borra de Café</h2>
+    <ul>
+      <li><a href="https://graocafes.com.br/borra-de-cafe/?srsltid=AfmBOopBFLcKCkdD_9XmeKmlvE81hYgg6q0_NNDu7BaIso7WbSV34wgk&utm_source=chatgpt.com" target="_blank">Grão Gourmet</a> – Borra de café para compostagem e outros usos.</li>
+      <li><a href="https://b2blue.com/detalhes-anuncio/Venda/vendo-borra-de-cafe/?utm_source=chatgpt.com" target="_blank">B2Blue</a> – Plataforma que conecta geradores de resíduos a compradores.</li>
+      <li><a href="https://hubdocafe.cooxupe.com.br/borra-de-cafe/?utm_source=chatgpt.com" target="_blank">Hub do Café</a> – Cooperativa oferecendo borra de café para compostagem.</li>
+    </ul>
+  </div>
+
+  <div class="category" id="compostos">
+    <h2>🧪 Compostos Vegetais Fermentados</h2>
+    <ul>
+      <li><a href="https://www.ciadosfermentados.com.br/?srsltid=AfmBOopK3DISmRCRX0HGxTY6MuqMjfQUmgPWHc7RI9s7ZBsdeC2xuZjd&utm_source=chatgpt.com" target="_blank">Companhia dos Fermentados</a> – Produtos fermentados que podem servir como base para biofertilizantes.</li>
+      <li><a href="https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1002216/compostos-organicos-fermentados-tipo-bokashi-obtidos-com-diferentes-materiais-de-origem-vegetal-e-diferentes-formas-de-inoculacao-visando-sua-utilizacao-no-cultivo-de-hortalicas?utm_source=chatgpt.com" target="_blank">Embrapa</a> – Pesquisa sobre compostos orgânicos fermentados tipo bokashi.</li>
+    </ul>
+  </div>
+
+  <div class="category" id="hormonios">
+    <h2>🌱 Extratos de Plantas Ricas em Hormônios Vegetais</h2>
+    <ul>
+      <li><a href="https://lista.mercadolivre.com.br/hormonios-vegetais?utm_source=chatgpt.com" target="_blank">Mercado Livre</a> – Hormônios vegetais como auxina para produção de biofertilizantes.</li>
+      <li><a href="https://www.stoller.com.br/blog/o-poder-dos-hormonios-vegetais-em-modular-o-desenvolvimento-da-planta/?utm_source=chatgpt.com" target="_blank">Stoller</a> – Produtos de nutrição e proteção de plantas, incluindo hormônios vegetais.</li>
+    </ul>
+  </div>
+
+  <div class="category" id="melado">
+    <h2>🍯 Melado de Cana</h2>
+    <ul>
+      <li><a href="https://superbom.com.br/produtos/food-service/melado-cana-25kg/?utm_source=chatgpt.com" target="_blank">Superbom</a> – Melado de cana em embalagens de 25kg.</li>
+      <li><a href="https://loja.dacolonia.com.br/melado-de-cana-250g?srsltid=AfmBOoqSuq459LadEQvQ1mhHleWkNyH_kWfmnpcsBA1hCgQrY3flgH6B&utm_source=chatgpt.com" target="_blank">DaColônia</a> – Melado de cana em embalagens menores, 250g.</li>
+      <li><a href="https://mellacodecana.com.br/?utm_source=chatgpt.com" target="_blank">Mellaço de Cana</a> – Venda de melado de cana com entrega em todo Brasil.</li>
+    </ul>
+  </div>
+
+  <div class="recipe" id="receitas">
+    <h2>🍃 Receitas de Biofertilizantes Líquidos</h2>
+    <ul>
+      <li><strong>Biofertilizante de Algas:</strong> 1kg de algas secas, 10L de água, fermentação 7 dias, coar e aplicar diluído 1:10.</li>
+      <li><strong>Biofertilizante de Borra de Café:</strong> 2kg de borra de café, 5L de água, adicionar 50g de melaço, fermentação 5 dias, aplicar diluído 1:5.</li>
+      <li><strong>Composto Vegetal Fermentado (Bokashi Líquido):</strong> 3kg de restos vegetais, 1L de melado, 10L de água, fermentar 10 dias, coar e aplicar diluído 1:8.</li>
+      <li><strong>Biofertilizante de Hormônio Vegetal:</strong> Extrato de folhas de neem ou moringa (500g), 5L de água, adicionar 20g de auxina, aplicar diluído 1:15.</li>
+    </ul>
+  </div>
+
+</main>
+
 </body>
 </html>
