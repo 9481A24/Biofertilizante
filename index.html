@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Receita – 1 litro de Biofertilizante (teste comercial)</title>
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#121212;
+      --accent:#ffd54f;
+      --text:#e9e9e9;
+      --muted:#bdbdbd;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .container{
+      max-width:900px;
+      margin:28px auto;
+      padding:20px;
+    }
+    header{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .badge{
+      width:12px;height:12px;border-radius:3px;background:var(--accent);
+      box-shadow:0 0 6px rgba(255,213,79,0.12);
+    }
+    h1{
+      font-size:20px;
+      margin:0;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      padding:18px;
+      border-radius:10px;
+    }
+    h2{ font-size:16px; margin:10px 0; color:var(--accent) }
+    ul{ margin:10px 0 18px 20px; color:var(--text) }
+    li{ margin:8px 0 }
+    .muted{ color:var(--muted); font-size:13px }
+    .note{ margin-top:12px; padding:10px; border-radius:8px; background:rgba(255,255,255,0.02); color:var(--muted) }
+    .actions{ margin-top:16px; display:flex; gap:8px; flex-wrap:wrap }
+    .btn{
+      background:var(--accent);
+      color:#111;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+    }
+    @media (max-width:520px){
+      .container{ padding:14px }
+      h1{ font-size:18px }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge" aria-hidden="true"></span>
+      <h1>Receita – 1 litro de Biofertilizante (teste comercial)</h1>
+    </header>
+
+    <main class="card" role="main">
+      <section aria-labelledby="ingredientes">
+        <h2 id="ingredientes">Ingredientes</h2>
+        <ul>
+          <li>500 g de esterco bovino curtido <strong>ou</strong> 300 g de restos vegetais triturados</li>
+          <li>30 g de melaço de cana (ou açúcar mascavo)</li>
+          <li>1 L de água filtrada/fervida e resfriada</li>
+          <li>1 sachê (5 g) de fermento biológico seco <strong>ou</strong> 1 g de levedura pura <em>Saccharomyces cerevisiae</em></li>
+          <li>1 g de inoculante de <em>Bacillus subtilis</em> (comprado em agropecuária ou fornecedor agrícola)</li>
+        </ul>
+      </section>
+
+      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
+
+      <section aria-labelledby="materiais">
+        <h2 id="materiais">Materiais</h2>
+        <ul>
+          <li>Garrafa de vidro âmbar (1 litro)</li>
+          <li>Funil e coador fino (pano de algodão ou filtro de café)</li>
+          <li>Balança de precisão (gramas)</li>
+          <li>Colher de inox ou espátula para mexer</li>
+          <li>Luvas descartáveis e etiqueta para identificação</li>
+        </ul>
+      </section>
+
+      <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
+
+      <section aria-labelledby="preparo">
+        <h2 id="preparo">Preparo (resumo)</h2>
+        <ol style="margin-left:20px;color:var(--text)">
+          <li>Em um recipiente limpo, misture o esterco (ou restos vegetais) com o melaço.</li>
+          <li>Adicione a água filtrada já resfriada até completar 1 litro.</li>
+          <li>Mexa bem e deixe repousar 1–2 horas.</li>
+          <li>Adicione o fermento/levedura e o inoculante de <em>Bacillus subtilis</em>, mexa levemente.</li>
+          <li>Coe a mistura utilizando funil e pano; transfira para a garrafa âmbar.</li>
+          <li>Feche bem, identifique com etiqueta (data e lote) e armazene em local fresco e escuro.</li>
+        </ol>
+        <p class="muted">Observação: este é um procedimento de teste comercial. Faça sempre testes de estabilidade e contagem microbiana antes de comercializar.</p>
+      </section>
+
+      <div class="note">
+        <strong>Validade e armazenamento:</strong> conservar em local fresco e escuro; recomenda-se testar estabilidade (pH, odor, presença de contaminantes) e embalar em frascos esterilizados. Para validade estendida, considerar técnicas de pasteurização leve ou estabilizantes aprovados para uso agrícola.
+      </div>
+
+      <div class="actions" aria-hidden="true">
+        <a class="btn" href="#ingredientes">Ir para Ingredientes</a>
+        <a class="btn" href="#preparo">Ir para Preparo</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
